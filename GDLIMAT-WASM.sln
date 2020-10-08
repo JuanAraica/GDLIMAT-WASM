@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30406.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GDLIMAT-WASM", "GDLIMAT-WASM.csproj", "{FB0DEC47-9626-4A3D-BE8A-0D374B5B6F74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "GDLIMAT-WASM", "GDLIMAT-WASM.csproj", "{FB0DEC47-9626-4A3D-BE8A-0D374B5B6F74}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -7,19 +7,40 @@
 
 <h3>Clientes</h3>
 
+<div class="row">
+    <div class="col-12 text-right">
+        <a href="ClienteForm">
+            Nuevo Cliente
+        </a>
+    </div>
+</div>
+
 <table class="table">
-    @if (oRespuesta!=null && oRespuesta.Data!=null)
+    <tr>
+        <th>NombreCliente</th>
+        <th>Contacto</th>
+        <th>Direccion</th>
+        <th>Email</th>
+        <th>Telefono</th>
+        <th>Proyecto</th>
+        <th>Elija una acción</th>
+    </tr>
+    @if (oRespuesta != null && oRespuesta.Data != null)
     {
         @foreach (var oElement in oRespuesta.Data)
         {
-            <tr>
-                <td>@oElement.NombreCliente</td>
-                <td>@oElement.Contacto</td>
-                <td>@oElement.Direccion</td>
-                <td>@oElement.Email</td>
-                <td>@oElement.Telefono</td>
-                <td>@oElement.Proyecto</td>
-            </tr>
+<tr>
+    <td>@oElement.NombreCliente</td>
+    <td>@oElement.Contacto</td>
+    <td>@oElement.Direccion</td>
+    <td>@oElement.Email</td>
+    <td>@oElement.Telefono</td>
+    <td>@oElement.Proyecto</td>
+    <td>
+        <a href="/Clientes">Editar</a>
+        <a href="#">Eliminar</a>
+    </td>
+</tr>
         }
     }
 
